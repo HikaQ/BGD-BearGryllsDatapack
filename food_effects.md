@@ -1,3 +1,9 @@
+# BearGrylls Datapack - Food Effects Table
+
+## 1.21 (base)
+
+> 884 items
+
 | Item | Nutrition | Saturation | Time(s) | Always | Effects | Remainder |
 |------|-----------|------------|---------|--------|---------|-----------|
 | acacia_boat | 2 | 1 | 1.6 |  | - | - |
@@ -885,4 +891,38 @@
 | yellow_terracotta | 3 | 1 | 1.6 |  | - | - |
 | yellow_wool | 1 | 1 | 1.6 | Y | - | - |
 
-> Total: 884 items
+## 1.21.2-1.21.3 (Bundles of Bravery)
+
+| Item | Nutrition | Saturation | Time(s) | Always | Effects | Remainder |
+|------|-----------|------------|---------|--------|---------|-----------|
+| *pending* | | | | | | |
+
+## 1.21.4 (The Garden Awakens)
+
+| Item | Nutrition | Saturation | Time(s) | Always | Effects | Remainder |
+|------|-----------|------------|---------|--------|---------|-----------|
+| *pending* | | | | | | |
+
+## 1.21.5 (Spring to Life)
+
+| Item | Nutrition | Saturation | Time(s) | Always | Effects | Remainder |
+|------|-----------|------------|---------|--------|---------|-----------|
+| *pending* | | | | | | |
+
+## 1.21.6-1.21.7 (Chase the Skies)
+
+| Item | Nutrition | Saturation | Time(s) | Always | Effects | Remainder |
+|------|-----------|------------|---------|--------|---------|-----------|
+| *pending* | | | | | | |
+
+## 1.21.9 (The Copper Age)
+
+| Item | Nutrition | Saturation | Time(s) | Always | Effects | Remainder |
+|------|-----------|------------|---------|--------|---------|-----------|
+| *pending* | | | | | | |
+
+## 26.x (Mounts of Mayhem)
+
+| Item | Nutrition | Saturation | Time(s) | Always | Effects | Remainder |
+|------|-----------|------------|---------|--------|---------|-----------|
+| *pending* | | | | | | |
