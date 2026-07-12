@@ -10,6 +10,8 @@
 
     function-permission-level=3
 
+关于食用物品可获得的效果，参考 [food_effects.md](https://github.com/HikaQ/BGD-BearGryllsDatapack/blob/1.21.2%2B/food_effects.md)
+
 # 更新计划
 - 更多可食用物品方块
 - 针对新版本进行物品自定义
