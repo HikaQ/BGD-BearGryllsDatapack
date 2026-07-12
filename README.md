@@ -6,6 +6,8 @@
 # 安装&游玩方法
 下载后的压缩包无需解压放到 .minecraft\saves\<world name>\datapacks 文件夹下，进入世界后输入 **/reload** 即可，（在数据包安装前获取的物品是无法食用的）。
 
+从创造栏拿出的物品也无法食用，需正常通过破坏掉落方块、获取战利品等才可食用。
+
 **推荐使用 原版服务端 或者 spigot端 进行游玩，使用服务端游玩需要在 server.properties 文件中修改 function 的权限等级：**
 
     function-permission-level=3
