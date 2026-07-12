@@ -17,11 +17,14 @@
                     "name": "minecraft:nether_sprouts",
                     "functions": [
                         {
-                            "function": "minecraft:set_component",
+                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:food": {
                                     "nutrition": 2,
                                     "saturation": 1
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6
                                 }
                             }
                         }

@@ -14,33 +14,41 @@
                     "name": "minecraft:amethyst_block",
                     "functions": [
                         {
-                            "function": "minecraft:set_component",
+                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:food": {
                                     "nutrition": 3,
-                                    "saturation": 15,
-                                    "effects": [
+                                    "saturation": 15
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:poison",
-                                                "amplifier": 1,
-                                                "duration": 1000
-                                            }
-                                        },
-                                        {
-                                            "effect": {
-                                                "id": "minecraft:night_vision",
-                                                "duration": 6000
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:poison",
+                                                    "amplifier": 1,
+                                                    "duration": 1000
+                                                },
+                                                {
+                                                    "id": "minecraft:night_vision",
+                                                    "duration": 6000
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
-                                    ],
-                                    "using_converts_to": {
-                                        "id": "minecraft:amethyst_shard",
-                                        "components": {
-                                            "minecraft:food": {
-                                                "nutrition": 1,
-                                                "saturation": 0
-                                            }
+                                    ]
+                                },
+                                "minecraft:use_remainder": {
+                                    "id": "minecraft:amethyst_shard",
+                                    "components": {
+                                        "minecraft:food": {
+                                            "nutrition": 1,
+                                            "saturation": 0
+                                        },
+                                        "minecraft:consumable": {
+                                            "consume_seconds": 1.6
                                         }
                                     }
                                 }

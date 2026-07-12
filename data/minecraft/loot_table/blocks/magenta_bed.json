@@ -28,8 +28,10 @@
                                 "minecraft:food": {
                                     "nutrition": 4,
                                     "saturation": 1,
-                                    "can_always_eat": true,
-                                    "eat_seconds": 1.6
+                                    "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6
                                 }
                             }
                         }

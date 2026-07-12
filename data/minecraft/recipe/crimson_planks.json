@@ -11,6 +11,9 @@
         "count": 4,
         "id": "minecraft:crimson_planks",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 1,
                 "saturation": 1

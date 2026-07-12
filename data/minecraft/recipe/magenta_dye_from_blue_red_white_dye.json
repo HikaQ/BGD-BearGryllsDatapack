@@ -20,6 +20,9 @@
         "count": 4,
         "id": "minecraft:magenta_dye",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 2,
                 "saturation": 1

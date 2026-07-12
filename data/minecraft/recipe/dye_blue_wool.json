@@ -58,11 +58,13 @@
         "count": 1,
         "id": "minecraft:blue_wool",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 1,
                 "saturation": 1,
-                "can_always_eat": true,
-                "eat_seconds": 1.8
+                "can_always_eat": true
             }
         }
     }

@@ -30,13 +30,20 @@
                                 "minecraft:food": {
                                     "nutrition": 1,
                                     "saturation": 1,
-                                    "can_always_eat": true,
-                                    "effects": [
+                                    "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:regeneration",
-                                                "duration": 80
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:regeneration",
+                                                    "duration": 80
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }
@@ -77,14 +84,21 @@
                                 "minecraft:food": {
                                     "nutrition": 0,
                                     "saturation": 0,
-                                    "can_always_eat": true,
-                                    "effects": [
+                                    "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:hunger",
-                                                "amplifier": 120,
-                                                "duration": 20
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:hunger",
+                                                    "amplifier": 120,
+                                                    "duration": 20
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }

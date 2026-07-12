@@ -18,18 +18,12 @@
         "count": 1,
         "id": "minecraft:beehive",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 5,
-                "saturation": 2.5,
-                "eat_seconds": 2,
-                "effects": [
-                    {
-                        "effect": {
-                            "id": "minecraft:oozing",
-                            "duration": -1
-                        }
-                    }
-                ]
+                "saturation": 2.5
             }
         }
     }

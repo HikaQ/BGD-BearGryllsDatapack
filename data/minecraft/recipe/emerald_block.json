@@ -15,6 +15,9 @@
         "count": 1,
         "id": "minecraft:emerald_block",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 15,
                 "saturation": 7

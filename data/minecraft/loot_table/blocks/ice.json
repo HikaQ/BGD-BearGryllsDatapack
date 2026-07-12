@@ -30,14 +30,21 @@
                             "components": {
                                 "minecraft:food": {
                                     "nutrition": 1,
-                                    "saturation": 1,
-                                    "effects": [
+                                    "saturation": 1
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:slowness",
-                                                "amplifier": 0,
-                                                "duration": 600
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:slowness",
+                                                    "amplifier": 0,
+                                                    "duration": 600
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }

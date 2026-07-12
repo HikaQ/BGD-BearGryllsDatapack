@@ -14,17 +14,24 @@
                     "name": "minecraft:dirt",
                     "functions": [
                         {
-                            "function": "minecraft:set_component",
+                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:food": {
                                     "nutrition": 1,
-                                    "saturation": 0,
-                                    "effects": [
+                                    "saturation": 0
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:hunger",
-                                                "duration": 900
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:hunger",
+                                                    "duration": 900
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }

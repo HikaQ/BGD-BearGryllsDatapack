@@ -19,6 +19,9 @@
         "count": 8,
         "id": "minecraft:cyan_stained_glass_pane",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 3,
                 "saturation": 1

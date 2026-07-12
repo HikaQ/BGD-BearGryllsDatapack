@@ -24,6 +24,9 @@
             "minecraft:food": {
                 "nutrition": 4,
                 "saturation": 1
+            },
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
             }
         }
     }

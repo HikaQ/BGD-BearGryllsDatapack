@@ -18,13 +18,20 @@
                                         "minecraft:food": {
                                             "nutrition": 3,
                                             "saturation": 1.5,
-                                            "can_always_eat": true,
-                                            "effects": [
+                                            "can_always_eat": true
+                                        },
+                                        "minecraft:consumable": {
+                                            "consume_seconds": 1.6,
+                                            "on_consume_effects": [
                                                 {
-                                                    "effect": {
-                                                        "id": "minecraft:glowing",
-                                                        "duration": 600
-                                                    }
+                                                    "type": "minecraft:apply_effects",
+                                                    "effects": [
+                                                        {
+                                                            "id": "minecraft:glowing",
+                                                            "duration": 600
+                                                        }
+                                                    ],
+                                                    "probability": 1.0
                                                 }
                                             ]
                                         }
@@ -67,6 +74,9 @@
                                         "minecraft:food": {
                                             "nutrition": 2,
                                             "saturation": 1
+                                        },
+                                        "minecraft:consumable": {
+                                            "consume_seconds": 1.6
                                         }
                                     }
                                 }

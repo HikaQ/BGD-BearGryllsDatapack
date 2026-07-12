@@ -13,46 +13,58 @@
                     "type": "minecraft:item",
                     "functions": [
                         {
-                            "function": "minecraft:set_component",
+                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:food": {
                                     "nutrition": 5,
-                                    "saturation": 2.5,
-                                    "effects": [
+                                    "saturation": 2.5
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:strength",
-                                                "amplifier": 1,
-                                                "duration": 800
-                                            }
-                                        },
-                                        {
-                                            "effect": {
-                                                "id": "minecraft:hunger",
-                                                "amplifier": 200,
-                                                "duration": 20,
-                                                "ambient": false,
-                                                "show_particles": false,
-                                                "show_icon": false
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:strength",
+                                                    "amplifier": 1,
+                                                    "duration": 800
+                                                },
+                                                {
+                                                    "id": "minecraft:hunger",
+                                                    "amplifier": 200,
+                                                    "duration": 20,
+                                                    "ambient": false,
+                                                    "show_particles": false,
+                                                    "show_icon": false
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
-                                    ],
-                                    "using_converts_to": {
-                                        "id": "minecraft:blaze_powder",
-                                        "components": {
-                                            "minecraft:food": {
-                                                "nutrition": 1,
-                                                "saturation": 0,
-                                                "effects": [
-                                                    {
-                                                        "effect": {
+                                    ]
+                                },
+                                "minecraft:use_remainder": {
+                                    "id": "minecraft:blaze_powder",
+                                    "components": {
+                                        "minecraft:food": {
+                                            "nutrition": 1,
+                                            "saturation": 0
+                                        },
+                                        "minecraft:consumable": {
+                                            "consume_seconds": 1.6,
+                                            "on_consume_effects": [
+                                                {
+                                                    "type": "minecraft:apply_effects",
+                                                    "effects": [
+                                                        {
                                                             "id": "minecraft:hunger",
                                                             "amplifier": 80,
                                                             "duration": 20
                                                         }
-                                                    }
-                                                ]
-                                            }
+                                                    ],
+                                                    "probability": 1.0
+                                                }
+                                            ]
                                         }
                                     }
                                 }

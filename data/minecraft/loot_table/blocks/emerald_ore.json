@@ -34,14 +34,20 @@
                                         "minecraft:food": {
                                             "nutrition": 3,
                                             "saturation": 1.5,
-                                            "can_always_eat": true,
-                                            "eat_seconds": 1.6,
-                                            "effects": [
+                                            "can_always_eat": true
+                                        },
+                                        "minecraft:consumable": {
+                                            "consume_seconds": 1.6,
+                                            "on_consume_effects": [
                                                 {
-                                                    "effect": {
-                                                        "id": "minecraft:hero_of_the_village",
-                                                        "duration": 200
-                                                    }
+                                                    "type": "minecraft:apply_effects",
+                                                    "effects": [
+                                                        {
+                                                            "id": "minecraft:hero_of_the_village",
+                                                            "duration": 200
+                                                        }
+                                                    ],
+                                                    "probability": 1.0
                                                 }
                                             ]
                                         }
@@ -65,8 +71,10 @@
                                     "components": {
                                         "minecraft:food": {
                                             "nutrition": 5,
-                                            "saturation": 2.5,
-                                            "eat_seconds": 1.6
+                                            "saturation": 2.5
+                                        },
+                                        "minecraft:consumable": {
+                                            "consume_seconds": 1.6
                                         }
                                     }
                                 }

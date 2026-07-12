@@ -20,6 +20,9 @@
                                     "nutrition": 2,
                                     "saturation": 1,
                                     "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6
                                 }
                             }
                         }
@@ -92,6 +95,9 @@
                                     "nutrition": 3,
                                     "saturation": 1.5,
                                     "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6
                                 }
                             }
                         }
@@ -133,20 +139,25 @@
                                 "minecraft:food": {
                                     "nutrition": 0,
                                     "saturation": 0,
-                                    "can_always_eat": true,
-                                    "effects": [
+                                    "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:hunger",
-                                                "amplifier": 40,
-                                                "duration": 20
-                                            }
-                                        },
-                                        {
-                                            "effect": {
-                                                "id": "minecraft:slowness",
-                                                "duration": 800
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:hunger",
+                                                    "amplifier": 40,
+                                                    "duration": 20
+                                                },
+                                                {
+                                                    "id": "minecraft:slowness",
+                                                    "duration": 800
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }
@@ -216,6 +227,9 @@
                                 "minecraft:food": {
                                     "nutrition": 1,
                                     "saturation": 1
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6
                                 }
                             }
                         }

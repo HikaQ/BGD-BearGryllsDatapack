@@ -23,6 +23,9 @@
                                     "nutrition": 2,
                                     "saturation": 1,
                                     "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6
                                 }
                             }
                         }
@@ -68,6 +71,9 @@
                                     "nutrition": 2,
                                     "saturation": 1,
                                     "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6
                                 }
                             }
                         },

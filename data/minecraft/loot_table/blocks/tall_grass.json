@@ -23,14 +23,20 @@
                                         "minecraft:food": {
                                             "nutrition": 1,
                                             "saturation": 0.5,
-                                            "can_always_eat": true,
-                                            "eat_seconds": 1.8,
-                                            "effects": [
+                                            "can_always_eat": true
+                                        },
+                                        "minecraft:consumable": {
+                                            "consume_seconds": 1.8,
+                                            "on_consume_effects": [
                                                 {
-                                                    "effect": {
-                                                        "id": "minecraft:regeneration",
-                                                        "duration": 60
-                                                    }
+                                                    "type": "minecraft:apply_effects",
+                                                    "effects": [
+                                                        {
+                                                            "id": "minecraft:regeneration",
+                                                            "duration": 60
+                                                        }
+                                                    ],
+                                                    "probability": 1.0
                                                 }
                                             ]
                                         }
@@ -93,14 +99,20 @@
                                         "minecraft:food": {
                                             "nutrition": 1,
                                             "saturation": 0.5,
-                                            "can_always_eat": true,
-                                            "eat_seconds": 1.8,
-                                            "effects": [
+                                            "can_always_eat": true
+                                        },
+                                        "minecraft:consumable": {
+                                            "consume_seconds": 1.8,
+                                            "on_consume_effects": [
                                                 {
-                                                    "effect": {
-                                                        "id": "minecraft:regeneration",
-                                                        "duration": 60
-                                                    }
+                                                    "type": "minecraft:apply_effects",
+                                                    "effects": [
+                                                        {
+                                                            "id": "minecraft:regeneration",
+                                                            "duration": 60
+                                                        }
+                                                    ],
+                                                    "probability": 1.0
                                                 }
                                             ]
                                         }

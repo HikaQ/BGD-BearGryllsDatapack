@@ -18,14 +18,21 @@
                             "components": {
                                 "minecraft:food": {
                                     "nutrition": 2,
-                                    "saturation": 1,
-                                    "effects": [
+                                    "saturation": 1
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:resistance",
-                                                "amplifier": 0,
-                                                "duration": 1200
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:resistance",
+                                                    "amplifier": 0,
+                                                    "duration": 1200
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }

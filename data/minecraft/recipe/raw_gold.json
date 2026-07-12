@@ -12,21 +12,26 @@
         "components": {
             "minecraft:food": {
                 "nutrition": 1,
-                "saturation": 0,
-                "effects": [
+                "saturation": 0
+            },
+            "minecraft:consumable": {
+                "consume_seconds": 1.6,
+                "on_consume_effects": [
                     {
-                        "effect": {
-                            "id": "minecraft:strength",
-                            "amplifier": 0,
-                            "duration": 100
-                        }
-                    },
-                    {
-                        "effect": {
-                            "id": "minecraft:hunger",
-                            "amplifier": 40,
-                            "duration": 20
-                        }
+                        "type": "minecraft:apply_effects",
+                        "effects": [
+                            {
+                                "id": "minecraft:strength",
+                                "amplifier": 0,
+                                "duration": 100
+                            },
+                            {
+                                "id": "minecraft:hunger",
+                                "amplifier": 40,
+                                "duration": 20
+                            }
+                        ],
+                        "probability": 1.0
                     }
                 ]
             }

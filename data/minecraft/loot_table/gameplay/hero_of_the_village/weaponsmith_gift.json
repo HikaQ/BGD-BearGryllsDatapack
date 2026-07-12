@@ -17,15 +17,22 @@
                             "components": {
                                 "minecraft:food": {
                                     "nutrition": 3,
-                                    "effects": [
-                                        {
-                                            "effect": {
-                                                "id": "minecraft:haste",
-                                                "duration": 1000
-                                            }
-                                        }
-                                    ],
                                     "saturation": 1
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
+                                        {
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:haste",
+                                                    "duration": 1000
+                                                }
+                                            ],
+                                            "probability": 1.0
+                                        }
+                                    ]
                                 }
                             }
                         }

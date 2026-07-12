@@ -7,6 +7,9 @@
         "count": 1,
         "id": "minecraft:chiseled_copper",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 4,
                 "saturation": 1

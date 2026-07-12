@@ -18,17 +18,24 @@
                             "components": {
                                 "minecraft:food": {
                                     "nutrition": 3,
-                                    "can_always_eat": true,
-                                    "effects": [
+                                    "saturation": 1,
+                                    "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:slowness",
-                                                "amplifier": 0,
-                                                "duration": 400
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:slowness",
+                                                    "amplifier": 0,
+                                                    "duration": 400
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
-                                    ],
-                                    "saturation": 1
+                                    ]
                                 }
                             }
                         }

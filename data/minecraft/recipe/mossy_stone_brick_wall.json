@@ -14,6 +14,9 @@
         "count": 6,
         "id": "minecraft:mossy_stone_brick_wall",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 1,
                 "saturation": 1

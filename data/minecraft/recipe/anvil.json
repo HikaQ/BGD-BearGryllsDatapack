@@ -18,6 +18,9 @@
         "count": 1,
         "id": "minecraft:anvil",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 8,
                 "saturation": 4

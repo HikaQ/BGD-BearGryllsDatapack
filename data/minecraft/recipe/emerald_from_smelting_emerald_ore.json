@@ -10,6 +10,9 @@
     "result": {
         "id": "minecraft:emerald",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 5,
                 "saturation": 3.5

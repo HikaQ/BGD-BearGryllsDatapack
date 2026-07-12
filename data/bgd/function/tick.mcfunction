@@ -37,8 +37,8 @@ execute as @a[tag=fire,predicate=bgd:fire] at @s run effect give @s fire_resista
 
 #交互物品/掉落实体
 #龙蛋
-execute as @a[tag=!d_egg] at @s if items entity @s container.* minecraft:dragon_egg[!minecraft:food={nutrition:4,saturation:2,can_always_eat:true,effects:[{effect:{id:"strength",duration:2400}}]}] run function bgd:foods/fix/dragon_egg
-execute as @a[tag=d_egg] at @s if items entity @s container.* minecraft:dragon_egg[minecraft:food={nutrition:4,saturation:2,can_always_eat:true,effects:[{effect:{id:"strength",duration:2400}}]}] run tag @s remove d_egg
+execute as @a[tag=!d_egg] at @s if items entity @s container.* minecraft:dragon_egg[!minecraft:food={nutrition:4,saturation:2,can_always_eat:true}] run function bgd:foods/fix/dragon_egg
+execute as @a[tag=d_egg] at @s if items entity @s container.* minecraft:dragon_egg[minecraft:food={nutrition:4,saturation:2,can_always_eat:true}] run tag @s remove d_egg
 
 execute if score ed bgd matches 1..1 run schedule clear bgd:foods/fix/dragon_egg_c
 execute if score ed bgd matches 1..1 run scoreboard players set ed bgd 0

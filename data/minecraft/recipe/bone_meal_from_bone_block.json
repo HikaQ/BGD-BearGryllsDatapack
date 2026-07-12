@@ -11,6 +11,9 @@
         "count": 9,
         "id": "minecraft:bone_meal",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 2,
                 "saturation": 1

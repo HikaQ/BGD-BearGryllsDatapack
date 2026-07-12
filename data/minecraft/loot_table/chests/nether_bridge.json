@@ -22,6 +22,9 @@
                                 "minecraft:food": {
                                     "nutrition": 5,
                                     "saturation": 2.5
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6
                                 }
                             }
                         }
@@ -47,6 +50,9 @@
                                 "minecraft:food": {
                                     "nutrition": 3,
                                     "saturation": 1.5
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6
                                 }
                             }
                         }
@@ -72,6 +78,9 @@
                                 "minecraft:food": {
                                     "nutrition": 4,
                                     "saturation": 12
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6
                                 }
                             }
                         }
@@ -89,15 +98,22 @@
                             "components": {
                                 "minecraft:food": {
                                     "nutrition": 2,
-                                    "effects": [
-                                        {
-                                            "effect": {
-                                                "id": "minecraft:strength",
-                                                "duration": 1000
-                                            }
-                                        }
-                                    ],
                                     "saturation": 1
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
+                                        {
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:strength",
+                                                    "duration": 1000
+                                                }
+                                            ],
+                                            "probability": 1.0
+                                        }
+                                    ]
                                 }
                             }
                         }
@@ -145,13 +161,20 @@
                                 "minecraft:food": {
                                     "nutrition": 3,
                                     "saturation": 2,
-                                    "can_always_eat": true,
-                                    "effects": [
+                                    "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:resistance",
-                                                "duration": 7900
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:resistance",
+                                                    "duration": 7900
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }
@@ -170,13 +193,20 @@
                                 "minecraft:food": {
                                     "nutrition": 3,
                                     "saturation": 1.5,
-                                    "can_always_eat": true,
-                                    "effects": [
+                                    "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:resistance",
-                                                "duration": 700
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:resistance",
+                                                    "duration": 700
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }
@@ -195,13 +225,20 @@
                                 "minecraft:food": {
                                     "nutrition": 5,
                                     "saturation": 2.5,
-                                    "can_always_eat": true,
-                                    "effects": [
+                                    "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:resistance",
-                                                "duration": 1200
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:resistance",
+                                                    "duration": 1200
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }

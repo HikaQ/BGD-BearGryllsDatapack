@@ -18,18 +18,12 @@
         "count": 1,
         "id": "minecraft:jukebox",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 2,
-                "saturation": 1,
-                "effects": [
-                    {
-                        "effect": {
-                            "id": "minecraft:resistance",
-                            "amplifier": 0,
-                            "duration": 1200
-                        }
-                    }
-                ]
+                "saturation": 1
             }
         }
     }

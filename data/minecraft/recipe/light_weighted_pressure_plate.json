@@ -13,6 +13,9 @@
         "count": 1,
         "id": "minecraft:light_weighted_pressure_plate",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 3,
                 "saturation": 1

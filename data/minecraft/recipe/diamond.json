@@ -10,6 +10,9 @@
         "count": 9,
         "id": "minecraft:diamond",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 1,
                 "saturation": 1

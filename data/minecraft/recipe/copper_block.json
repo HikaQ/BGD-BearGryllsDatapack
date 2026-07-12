@@ -15,6 +15,9 @@
         "count": 1,
         "id": "minecraft:copper_block",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 4,
                 "saturation": 1

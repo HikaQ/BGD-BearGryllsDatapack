@@ -17,46 +17,37 @@
         "count": 1,
         "id": "minecraft:brewing_stand",
         "components": {
-            "minecraft:food": {
-                "nutrition": 5,
-                "saturation": 2.5,
-                "effects": [
-                    {
-                        "effect": {
-                            "id": "minecraft:strength",
-                            "amplifier": 1,
-                            "duration": 800
-                        }
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
+            "minecraft:use_remainder": {
+                "id": "minecraft:blaze_powder",
+                "components": {
+                    "minecraft:food": {
+                        "nutrition": 1,
+                        "saturation": 0
                     },
-                    {
-                        "effect": {
-                            "id": "minecraft:hunger",
-                            "amplifier": 200,
-                            "duration": 20,
-                            "ambient": false,
-                            "show_particles": false,
-                            "show_icon": false
-                        }
-                    }
-                ],
-                "using_converts_to": {
-                    "id": "minecraft:blaze_powder",
-                    "components": {
-                        "minecraft:food": {
-                            "nutrition": 1,
-                            "saturation": 0,
-                            "effects": [
-                                {
-                                    "effect": {
+                    "minecraft:consumable": {
+                        "consume_seconds": 1.6,
+                        "on_consume_effects": [
+                            {
+                                "type": "minecraft:apply_effects",
+                                "effects": [
+                                    {
                                         "id": "minecraft:hunger",
                                         "amplifier": 80,
                                         "duration": 20
                                     }
-                                }
-                            ]
-                        }
+                                ],
+                                "probability": 1.0
+                            }
+                        ]
                     }
                 }
+            },
+            "minecraft:food": {
+                "nutrition": 5,
+                "saturation": 2.5
             }
         }
     }

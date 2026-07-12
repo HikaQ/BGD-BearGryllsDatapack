@@ -35,6 +35,9 @@
         "count": 8,
         "id": "minecraft:green_concrete_powder",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 2,
                 "saturation": 1

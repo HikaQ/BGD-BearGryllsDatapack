@@ -8,47 +8,43 @@
                     "type": "minecraft:item",
                     "functions": [
                         {
-                            "function": "minecraft:set_component",
+                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:food": {
                                     "nutrition": 20,
-                                    "saturation": 20,
-                                    "eat_seconds": 30,
-                                    "effects": [
+                                    "saturation": 20
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 30,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:regeneration"
-                                            }
-                                        },
-                                        {
-                                            "effect": {
-                                                "id": "minecraft:strength",
-                                                "duration": 1500
-                                            }
-                                        },
-                                        {
-                                            "effect": {
-                                                "id": "minecraft:jump_boost",
-                                                "duration": 1500
-                                            }
-                                        },
-                                        {
-                                            "effect": {
-                                                "id": "minecraft:resistance",
-                                                "duration": 1500
-                                            }
-                                        },
-                                        {
-                                            "effect": {
-                                                "id": "minecraft:haste",
-                                                "duration": 1500
-                                            }
-                                        },
-                                        {
-                                            "effect": {
-                                                "id": "minecraft:speed",
-                                                "duration": 1500
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:regeneration"
+                                                },
+                                                {
+                                                    "id": "minecraft:strength",
+                                                    "duration": 1500
+                                                },
+                                                {
+                                                    "id": "minecraft:jump_boost",
+                                                    "duration": 1500
+                                                },
+                                                {
+                                                    "id": "minecraft:resistance",
+                                                    "duration": 1500
+                                                },
+                                                {
+                                                    "id": "minecraft:haste",
+                                                    "duration": 1500
+                                                },
+                                                {
+                                                    "id": "minecraft:speed",
+                                                    "duration": 1500
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }

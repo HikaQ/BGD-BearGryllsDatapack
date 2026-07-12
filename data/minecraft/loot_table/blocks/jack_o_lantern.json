@@ -19,14 +19,20 @@
                                 "minecraft:food": {
                                     "nutrition": 2,
                                     "saturation": 1,
-                                    "can_always_eat": true,
-                                    "eat_seconds": 1.6,
-                                    "effects": [
+                                    "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:night_vision",
-                                                "duration": 800
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:night_vision",
+                                                    "duration": 800
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }

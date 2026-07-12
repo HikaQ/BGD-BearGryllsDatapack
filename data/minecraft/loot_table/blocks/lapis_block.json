@@ -19,21 +19,25 @@
                                 "minecraft:food": {
                                     "nutrition": 5,
                                     "saturation": 10.0,
-                                    "can_always_eat": true,
-                                    "eat_seconds": 2.5,
-                                    "effects": [
+                                    "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 2.5,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:haste",
-                                                "duration": 1000
-                                            }
-                                        },
-                                        {
-                                            "effect": {
-                                                "id": "minecraft:luck",
-                                                "amplifier": 9,
-                                                "duration": 300
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:haste",
+                                                    "duration": 1000
+                                                },
+                                                {
+                                                    "id": "minecraft:luck",
+                                                    "amplifier": 9,
+                                                    "duration": 300
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }

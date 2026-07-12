@@ -30,6 +30,9 @@
                                 "minecraft:food": {
                                     "nutrition": 5,
                                     "saturation": 2.5
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6
                                 }
                             }
                         }
@@ -45,14 +48,20 @@
                                 "minecraft:food": {
                                     "nutrition": 0,
                                     "saturation": 0.5,
-                                    "can_always_eat": true,
-                                    "eat_seconds": 1.6,
-                                    "effects": [
+                                    "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:speed",
-                                                "duration": 20
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:speed",
+                                                    "duration": 20
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }
@@ -70,14 +79,21 @@
                                 "minecraft:food": {
                                     "nutrition": 0,
                                     "saturation": 0,
-                                    "can_always_eat": true,
-                                    "effects": [
+                                    "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:hunger",
-                                                "amplifier": 120,
-                                                "duration": 20
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:hunger",
+                                                    "amplifier": 120,
+                                                    "duration": 20
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }
@@ -94,8 +110,10 @@
                             "components": {
                                 "minecraft:food": {
                                     "nutrition": 5,
-                                    "saturation": 2.5,
-                                    "eat_seconds": 1.6
+                                    "saturation": 2.5
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6
                                 }
                             }
                         }

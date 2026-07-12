@@ -14,6 +14,9 @@
                                 "minecraft:food": {
                                     "nutrition": 1,
                                     "saturation": 1
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6
                                 }
                             }
                         }
@@ -29,21 +32,25 @@
                                 "minecraft:food": {
                                     "nutrition": 3,
                                     "saturation": 0.5,
-                                    "can_always_eat": true,
-                                    "eat_seconds": 2,
-                                    "effects": [
+                                    "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 2,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:haste",
-                                                "duration": 300
-                                            }
-                                        },
-                                        {
-                                            "effect": {
-                                                "id": "minecraft:luck",
-                                                "amplifier": 4,
-                                                "duration": 300
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:haste",
+                                                    "duration": 300
+                                                },
+                                                {
+                                                    "id": "minecraft:luck",
+                                                    "amplifier": 4,
+                                                    "duration": 300
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }

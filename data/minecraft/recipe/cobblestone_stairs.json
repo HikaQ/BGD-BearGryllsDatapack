@@ -15,6 +15,9 @@
         "count": 4,
         "id": "minecraft:cobblestone_stairs",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 1,
                 "saturation": 1

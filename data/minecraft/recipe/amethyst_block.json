@@ -14,33 +14,24 @@
         "count": 1,
         "id": "minecraft:amethyst_block",
         "components": {
-            "minecraft:food": {
-                "nutrition": 3,
-                "saturation": 15,
-                "effects": [
-                    {
-                        "effect": {
-                            "id": "minecraft:poison",
-                            "amplifier": 1,
-                            "duration": 1000
-                        }
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
+            "minecraft:use_remainder": {
+                "id": "minecraft:amethyst_shard",
+                "components": {
+                    "minecraft:food": {
+                        "nutrition": 1,
+                        "saturation": 0
                     },
-                    {
-                        "effect": {
-                            "id": "minecraft:night_vision",
-                            "duration": 6000
-                        }
-                    }
-                ],
-                "using_converts_to": {
-                    "id": "minecraft:amethyst_shard",
-                    "components": {
-                        "minecraft:food": {
-                            "nutrition": 1,
-                            "saturation": 0
-                        }
+                    "minecraft:consumable": {
+                        "consume_seconds": 1.6
                     }
                 }
+            },
+            "minecraft:food": {
+                "nutrition": 3,
+                "saturation": 15
             }
         }
     }

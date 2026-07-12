@@ -14,17 +14,24 @@
                     "name": "minecraft:soul_lantern",
                     "functions": [
                         {
-                            "function": "minecraft:set_component",
+                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:food": {
                                     "nutrition": 1,
-                                    "saturation": 0,
-                                    "effects": [
+                                    "saturation": 0
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:night_vision",
-                                                "duration": 1000
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:night_vision",
+                                                    "duration": 1000
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }

@@ -30,6 +30,9 @@
                                 "minecraft:food": {
                                     "nutrition": 2,
                                     "saturation": 1
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6
                                 }
                             }
                         }
@@ -45,8 +48,10 @@
                             "components": {
                                 "minecraft:food": {
                                     "nutrition": 5,
-                                    "saturation": 2.5,
-                                    "eat_seconds": 1.6
+                                    "saturation": 2.5
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6
                                 }
                             }
                         }
@@ -63,14 +68,20 @@
                                 "minecraft:food": {
                                     "nutrition": 1,
                                     "saturation": 0.5,
-                                    "can_always_eat": true,
-                                    "eat_seconds": 1.8,
-                                    "effects": [
+                                    "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.8,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:regeneration",
-                                                "duration": 60
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:regeneration",
+                                                    "duration": 60
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }
@@ -88,13 +99,20 @@
                             "components": {
                                 "minecraft:food": {
                                     "nutrition": 1,
-                                    "saturation": 1,
-                                    "effects": [
+                                    "saturation": 1
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:haste",
-                                                "duration": 300
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:haste",
+                                                    "duration": 300
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }
@@ -113,21 +131,25 @@
                                 "minecraft:food": {
                                     "nutrition": 1,
                                     "saturation": 0.0,
-                                    "can_always_eat": true,
-                                    "eat_seconds": 1.5,
-                                    "effects": [
+                                    "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.5,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:haste",
-                                                "duration": 200
-                                            }
-                                        },
-                                        {
-                                            "effect": {
-                                                "id": "minecraft:hunger",
-                                                "amplifier": 130,
-                                                "duration": 20
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:haste",
+                                                    "duration": 200
+                                                },
+                                                {
+                                                    "id": "minecraft:hunger",
+                                                    "amplifier": 130,
+                                                    "duration": 20
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }
@@ -145,8 +167,11 @@
                             "components": {
                                 "minecraft:food": {
                                     "nutrition": 1,
-                                    "can_always_eat": true,
-                                    "saturation": 1
+                                    "saturation": 1,
+                                    "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6
                                 }
                             }
                         }

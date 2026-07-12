@@ -18,13 +18,20 @@
                             "components": {
                                 "minecraft:food": {
                                     "nutrition": 1,
-                                    "saturation": 1,
-                                    "effects": [
+                                    "saturation": 1
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "minecraft:regeneration",
-                                                "duration": 100
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:regeneration",
+                                                    "duration": 100
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }

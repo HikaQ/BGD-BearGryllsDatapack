@@ -18,17 +18,12 @@
         "count": 1,
         "id": "minecraft:lantern",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 1,
-                "saturation": 0,
-                "effects": [
-                    {
-                        "effect": {
-                            "id": "minecraft:night_vision",
-                            "duration": 900
-                        }
-                    }
-                ]
+                "saturation": 0
             }
         }
     }

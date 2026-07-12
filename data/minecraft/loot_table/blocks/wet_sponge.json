@@ -14,17 +14,24 @@
                     "name": "minecraft:wet_sponge",
                     "functions": [
                         {
-                            "function": "minecraft:set_component",
+                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:food": {
                                     "nutrition": 1,
-                                    "saturation": 0,
-                                    "effects": [
+                                    "saturation": 0
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
                                         {
-                                            "effect": {
-                                                "id": "water_breathing",
-                                                "duration": 1000
-                                            }
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "water_breathing",
+                                                    "duration": 1000
+                                                }
+                                            ],
+                                            "probability": 1.0
                                         }
                                     ]
                                 }

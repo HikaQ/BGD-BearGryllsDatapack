@@ -17,6 +17,9 @@
         "count": 6,
         "id": "minecraft:nether_brick_fence",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 1,
                 "saturation": 1

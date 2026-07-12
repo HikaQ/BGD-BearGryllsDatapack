@@ -16,11 +16,13 @@
         "count": 1,
         "id": "minecraft:gold_ingot",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 4,
                 "saturation": 4,
-                "can_always_eat": true,
-                "eat_seconds": 2.3
+                "can_always_eat": true
             }
         }
     }

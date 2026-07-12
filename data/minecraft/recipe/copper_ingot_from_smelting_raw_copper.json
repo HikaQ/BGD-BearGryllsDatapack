@@ -10,6 +10,9 @@
     "result": {
         "id": "minecraft:copper_ingot",
         "components": {
+            "minecraft:consumable": {
+                "consume_seconds": 1.6
+            },
             "minecraft:food": {
                 "nutrition": 2,
                 "saturation": 1
